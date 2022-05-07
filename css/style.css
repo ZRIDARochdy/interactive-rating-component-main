@@ -26,6 +26,33 @@
 
 /* ~~~~~~~~~~~ General Style ~~~~~~~~~~~ */
 
+body {
+	font-family: var(--ff);
+	font-size: var(--fs);
+	line-height: 1.6;
+	color: var(--LightGrey);
+	display: grid;
+	place-content: center;
+	background-color: var(--VeryDarkBlue);
+}
+h1 {
+	color: var(--White);
+}
+h1,
+p,
+ul {
+	margin-block: 1rem;
+}
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+button {
+	font: inherit;
+}
+
 /* ~~~~~~~~~~~ Card Style ~~~~~~~~~~~ */
+
+
 
 /* ~~~~~~~~~~~ Utilities Style ~~~~~~~~~~~ */
