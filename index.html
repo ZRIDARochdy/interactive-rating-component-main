@@ -21,50 +21,69 @@
 	</head>
 	<body>
 		<main>
-			<article class="card state1">
-				<img
-					src="./images/icon-star.svg"
-					alt="star"
-					class="card__img"
-				/>
-				<h1>How did we do?</h1>
-				<p>
-					Please let us know how we did with your support request. All
-					feedback is appreciated to help us improve our offering!
-				</p>
-				<ul class="card__rating">
-					<li id="rate1" class="card__rating-element" data-value="1">
-						1
-					</li>
-					<li id="rate2" class="card__rating-element" data-value="2">
-						2
-					</li>
-					<li id="rate3" class="card__rating-element" data-value="3">
-						3
-					</li>
-					<li
-						id="rate4"
-						class="card__rating-element selected"
-						data-value="4"
-					>
-						4
-					</li>
-					<li id="rate5" class="card__rating-element" data-value="5">
-						5
-					</li>
-				</ul>
-				<button type="submit" class="card__button">Submit</button>
+			<article class="card">
+				<div id="rate-sate">
+					<img
+						src="./images/icon-star.svg"
+						alt="star"
+						class="card__img"
+					/>
+					<h1>How did we do?</h1>
+					<p>
+						Please let us know how we did with your support request.
+						All feedback is appreciated to help us improve our
+						offering!
+					</p>
+					<ul class="card__rating">
+						<li
+							id="rate1"
+							class="card__rating-element"
+							data-value="1"
+						>
+							1
+						</li>
+						<li
+							id="rate2"
+							class="card__rating-element"
+							data-value="2"
+						>
+							2
+						</li>
+						<li
+							id="rate3"
+							class="card__rating-element"
+							data-value="3"
+						>
+							3
+						</li>
+						<li
+							id="rate4"
+							class="card__rating-element"
+							data-value="4"
+						>
+							4
+						</li>
+						<li
+							id="rate5"
+							class="card__rating-element"
+							data-value="5"
+						>
+							5
+						</li>
+					</ul>
+					<button type="submit" class="card__button">Submit</button>
+				</div>
 			</article>
 		</main>
-		<template>
-			<div class="thank-state text-center">
+		<template id="thanks">
+			<div id="thank-state" class="text-center">
 				<img
 					src="./images/illustration-thank-you.svg"
 					alt="Illustration-thank-you"
 					class="card__img2"
 				/>
 				<p class="card__rating-value">
-					You selected <span id="rating_value">5</span> out of 5
+					You selected <span id="rated_value">5</span> out of 5
 				</p>
 				<h1>Thank you!</h1>
 				<p>
@@ -73,9 +92,5 @@
 				</p>
 			</div>
 		</template>
-
-		<!-- Thank you state start -->
-
-		<!-- Add rating here -->
 	</body>
 </html>
