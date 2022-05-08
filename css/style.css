@@ -74,13 +74,13 @@ button {
 	margin-block: 2rem;
 }
 .card__rating-element {
-	align-self: center;
 	border-radius: 50%;
 	width: 3rem;
 	line-height: 3rem;
 	text-align: center;
 	background-color: hsla(0, 0%, 100%, 0.03);
 	font-weight: 700;
+	cursor: pointer;
 	transition: var(--transition);
 }
 .card__rating-element:hover,
@@ -103,12 +103,17 @@ button {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	transition: var(--transition);
+	cursor: pointer;
 }
-
 .card__button:hover,
 .card__button:focus {
 	color: var(--Orange);
 	background-color: var(--White);
+}
+.card__button:disabled {
+	color: var(--MediumGrey);
+	background-color: var(--LightGrey);
+	cursor: default;
 }
 
 /* ====================================================== */
@@ -123,8 +128,72 @@ button {
 	color: var(--Orange);
 }
 
+
 /* ~~~~~~~~~~~ Utilities Style ~~~~~~~~~~~ */
 
 .text-center {
 	text-align: center;
+}
+
+.fade-out {
+	animation: fadeOut 0.5s;
+	-webkit-animation: fadeOut 0.5s;
+	-moz-animation: fadeOut 0.5s;
+}
+.fade-in {
+	animation: fadeIn 0.5s;
+	-webkit-animation: fadeIn 0.5s;
+	-moz-animation: fadeIn 0.5s;
+}
+
+/* Animate opacity */
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+@-moz-keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-moz-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
