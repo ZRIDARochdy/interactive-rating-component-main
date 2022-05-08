@@ -57,8 +57,8 @@ button {
 /* ~~~~~~~~~~~ Card Style ~~~~~~~~~~~ */
 
 .card {
-	width: 33ch;
-	padding: 1.3rem;
+	width: 35ch;
+	padding: 2rem 1.3rem;
 	border-radius: 1rem;
 	background-color: var(--DarkBlue);
 }
@@ -111,4 +111,20 @@ button {
 	background-color: var(--White);
 }
 
+/* ====================================================== */
+/* =================== Thank you states =================== */
+/* ====================================================== */
+
+.card__rating-value {
+	display: inline-block;
+	background-color: hsla(0, 0%, 100%, 0.03);
+	padding: 0.5rem 1.2rem;
+	border-radius: 2rem;
+	color: var(--Orange);
+}
+
 /* ~~~~~~~~~~~ Utilities Style ~~~~~~~~~~~ */
+
+.text-center {
+	text-align: center;
+}
