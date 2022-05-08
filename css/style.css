@@ -10,6 +10,7 @@
 	--MediumGrey: hsl(216, 12%, 54%);
 	--DarkBlue: hsl(213, 19%, 18%);
 	--VeryDarkBlue: hsl(216, 12%, 8%);
+	--transition: all 0.4ms ease-in-out;
 }
 
 /* ~~~~~~~~~~~ Reset Style ~~~~~~~~~~~ */
@@ -27,6 +28,9 @@
 /* ~~~~~~~~~~~ General Style ~~~~~~~~~~~ */
 
 body {
+	width: min(100% - 2.5rem, 90rem);
+	min-height: calc(100vh - 1px);
+	margin-inline: auto;
 	font-family: var(--ff);
 	font-size: var(--fs);
 	line-height: 1.6;
@@ -39,8 +43,7 @@ h1 {
 	color: var(--White);
 }
 h1,
-p,
-ul {
+p {
 	margin-block: 1rem;
 }
 ul {
@@ -53,6 +56,59 @@ button {
 
 /* ~~~~~~~~~~~ Card Style ~~~~~~~~~~~ */
 
+.card {
+	width: 33ch;
+	padding: 1.3rem;
+	border-radius: 1rem;
+	background-color: var(--DarkBlue);
+}
+.card__img {
+	background-color: hsla(0, 0%, 100%, 0.03);
+	padding: 1rem;
+	border-radius: 50%;
+}
+.card__rating {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-block: 2rem;
+}
+.card__rating-element {
+	align-self: center;
+	border-radius: 50%;
+	width: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	background-color: hsla(0, 0%, 100%, 0.03);
+	font-weight: 700;
+	transition: var(--transition);
+}
+.card__rating-element:hover,
+.card__rating-element:focus {
+	color: var(--White);
+	background-color: var(--Orange);
+}
 
+.card__rating-element.selected {
+	color: var(--White);
+	background-color: var(--MediumGrey);
+}
+
+.card__button {
+	width: 100%;
+	padding: 0.5rem;
+	color: var(--White);
+	background-color: var(--Orange);
+	border-radius: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: var(--transition);
+}
+
+.card__button:hover,
+.card__button:focus {
+	color: var(--Orange);
+	background-color: var(--White);
+}
 
 /* ~~~~~~~~~~~ Utilities Style ~~~~~~~~~~~ */
