@@ -12,7 +12,6 @@
 	--VeryDarkBlue: hsl(216, 12%, 8%);
 	--transition: all 0.4ms ease-in-out;
 }
-
 /* ~~~~~~~~~~~ Reset Style ~~~~~~~~~~~ */
 
 *,
@@ -110,11 +109,11 @@ button {
 	color: var(--Orange);
 	background-color: var(--White);
 }
-.card__button:disabled {
+/* .card__button:disabled {
 	color: var(--MediumGrey);
 	background-color: var(--LightGrey);
 	cursor: default;
-}
+} */
 
 /* ====================================================== */
 /* =================== Thank you states =================== */
