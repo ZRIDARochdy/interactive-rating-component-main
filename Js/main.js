@@ -29,7 +29,6 @@ function onClickRate(e) {
 		itemClicked.classList.add('selected');
 
 		rateValue = itemClicked.dataset.value;
-		console.log(rateValue);
 		button.disabled = false;
 	}
 }
